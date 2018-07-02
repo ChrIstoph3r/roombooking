@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Rombooking.Models
+{
+    public class Room
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int BranchID { get; set; }
+
+        public virtual Branch Branch { get; set; }
+    }
+}
